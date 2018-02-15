@@ -1,0 +1,144 @@
+body {
+  background-color: white;
+}
+
+h1 {
+    font-family: Rammetto One, Monospace;
+  }
+
+.orange-text {
+    color: orangered;
+  }
+
+h2  {
+    font-family: Chewy, Monospace;
+}
+
+.thin-pink-border {
+    border-color: #efc9e6;
+    border-width: 4px;
+    border-style: solid;
+  }
+
+.thick-pink-border {
+    border-color: #fff2fb;
+    border-left-width: 6px;
+    border-top-width: 6px;
+    border-right-width: 6px;
+    border-bottom-width: 22px;
+    border-style: solid;
+  }
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);  /* <-- Just for the demo, Yes I like pretty fonts... */
+
+.square-left {
+    float:left;
+    position:relative;
+    width: 30%;
+    height: 22%;
+    padding-bottom:20%; /* = width for a 1:1 aspect ratio */
+    margin-left:10%;
+    margin-bottom:5%;
+    margin-top:5%;
+    background-color:#f4f6f9;
+    overflow:hidden;
+    color: #fff;
+}
+.square-right {
+    float:right;
+    position:relative;
+    width: 30%;
+    height: 22%;
+    padding-bottom:20%; /* = width for a 1:1 aspect ratio */
+    margin-right:10%;
+    margin-top:5%;
+    margin-bottom:5%;
+    background-color:#f4f6f9;
+    overflow:hidden;
+    color: #fff;
+}
+
+.square-middle {
+    float:center;
+    position:relative;
+    width: 60%;
+    height:145%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin-left:20%;
+    margin-right:20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color:white;
+    overflow:hidden;
+    color: #fff;
+}
+
+.content {
+    position:absolute;
+    height:95%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    padding: 5%;
+     
+}
+
+/*  For responsive images */
+
+.content .rs{
+    width:100%;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
+    color: #fff;
+}
+/*  For responsive images as background */
+
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+    color:#fff;
+}
+
+.img1{
+    background-image: url('http://nostalgiacentral.com/wp-content/uploads/2014/06/hectorshouse5.jpg');
+}
+.img2{
+    background-image: url('http://nostalgiacentral.com/wp-content/uploads/2014/06/hectorshouse7.jpg');
+}
+.img3 {
+    background-image: url('http://www.hotelroomsearch.net/im/hotels/caribbean/ag/hector-s-house-11.jpg');
+}
+.img4{
+    background-image: url('https://cdn.bandmix.co.uk/bandmix_uk/media/49/49845/183488-l.jpg');
+}
+.img5{
+    background-image: url('https://i.ytimg.com/vi/s1X99WJX3BU/hqdefault.jpg');
+}
+.img6{
+    background-image: url('http://images.smh.com.au/2012/08/18/3565546/The-Goodies_729-620x349.jpg');
+}
+.imgBrick{
+    background-image: url('https://s2.favim.com/orig/150418/aesthetic-background-brick-pink-Favim.com-2661092.jpg');
+}
+
+
+.pageBackground {
+    background-image: url("https://image.freepik.com/foto-gratis/mesa-blanca-vacia-madera-de-la-perspectiva-sobre-arboles-de-la-falta-de-definicion-con-el-fondo-del-bokeh-fondo-del-montaje-de-la-exhibicion-del-producto_7190-402.jpg");
+}
+
+/*  following just for the demo */
+
+
+body {
+    font-size:20px;
+    font-family: 'Lato',verdana, sans-serif;
+/*   color: #fff;
+/*    background:#ECECEC;
+}
+
+.numbers{
+    font-weight:900;
+    font-size:100px;
+    color: #fff;
+}
