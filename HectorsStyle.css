@@ -1,5 +1,7 @@
 body {
-  background-color: white;
+    background-color: white;
+    font-size:15px;
+    font-family: 'Lato',Monospace, sans-serif;
 }
 
 h1 {
@@ -37,8 +39,6 @@ h2  {
     border-style: solid;
   }
 
-
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);  /* <-- Just for the demo, Yes I like pretty fonts... */
 
 .square-left {
     float:left;
@@ -135,18 +135,3 @@ h2  {
     background-image: url("https://image.freepik.com/foto-gratis/mesa-blanca-vacia-madera-de-la-perspectiva-sobre-arboles-de-la-falta-de-definicion-con-el-fondo-del-bokeh-fondo-del-montaje-de-la-exhibicion-del-producto_7190-402.jpg");
 }
 
-/*  following just for the demo */
-
-
-body {
-    font-size:20px;
-    font-family: 'Lato',verdana, sans-serif;
-/*   color: #fff;
-/*    background:#ECECEC;
-}
-
-.numbers{
-    font-weight:900;
-    font-size:100px;
-    color: #fff;
-}
