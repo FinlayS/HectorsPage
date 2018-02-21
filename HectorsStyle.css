@@ -39,6 +39,15 @@ h2  {
     border-style: solid;
   }
 
+.thick-black-border {
+    border-color: black;
+    border-left-width: 8px;
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-style: solid;
+  }
+
 
 .square-left {
     float:left;
@@ -80,6 +89,13 @@ h2  {
     background-color:white;
     overflow:hidden;
     color: #fff;
+}
+
+.squareTest {
+    width: 100%;
+    padding-bottom: 100%;
+    background-image: url('https://s2.favim.com/orig/150418/aesthetic-background-brick-pink-Favim.com-2661092.jpg');
+    background-size: cover;
 }
 
 .content {
