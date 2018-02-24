@@ -39,48 +39,11 @@ h2  {
     border-style: solid;
   }
 
-.thick-black-border {
-    border-color: black;
-    border-left-width: 8px;
-    border-top-width: 8px;
-    border-right-width: 8px;
-    border-bottom-width: 8px;
-    border-style: solid;
-  }
-
-
-.square-left {
-    float:left;
-    position:relative;
-    width: 30%;
-    height: 22%;
-    padding-bottom:20%; /* = width for a 1:1 aspect ratio */
-    margin-left:10%;
-    margin-bottom:5%;
-    margin-top:5%;
-    background-color:#f4f6f9;
-    overflow:hidden;
-    color: #fff;
-}
-.square-right {
-    float:right;
-    position:relative;
-    width: 30%;
-    height: 22%;
-    padding-bottom:20%; /* = width for a 1:1 aspect ratio */
-    margin-right:10%;
-    margin-top:5%;
-    margin-bottom:5%;
-    background-color:#f4f6f9;
-    overflow:hidden;
-    color: #fff;
-}
-
 .square-middle {
     float:center;
     position:relative;
     width: 60%;
-    height:50%;
+    height:100%;
     padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
     margin-left:20%;
     margin-right:20%;
@@ -92,34 +55,24 @@ h2  {
 }
 
 .squareTest {
-    width: 100%;
-    padding-bottom: 100%;
-    background-image: url('https://s2.favim.com/orig/150418/aesthetic-background-brick-pink-Favim.com-2661092.jpg');
+    width: 95%;
+    height: 15%;
+    margin: 10;
     background-size: cover;
 }
 
 .content {
     position:absolute;
-    height:95%; /* = 100% - 2*5% padding */
+    height:100%; /* = 100% - 2*5% padding */
     width:100%; /* = 100% - 2*5% padding */
     padding: 5%;
      
 }
 
-/*  For responsive images */
-
-.content .rs{
-    width:100%;
-    height:auto;
-    max-height:90%;
-    max-width:100%;
-    color: #fff;
-}
-/*  For responsive images as background */
-
 .bg{
     background-position:center center;
-    background-repeat:no-repeat;
+    margin-top: 5%;
+    padding: 10;
     background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
     color:#fff;
 }
