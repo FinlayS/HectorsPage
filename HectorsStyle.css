@@ -13,11 +13,13 @@ h1 {
   }
 
 .rainbow {
-  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 60;
+    
 }
 
 h2  {
@@ -56,7 +58,7 @@ h2  {
 
 .squareTest {
     width: 95%;
-    height: 15%;
+    height: 22%;
     margin: 10;
     background-size: cover;
 }
@@ -69,12 +71,14 @@ h2  {
      
 }
 
-.bg{
-    background-position:center center;
-    margin-top: 5%;
-    padding: 10;
-    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+.pageBackground {
     color:#fff;
+    background-position:center center;
+    margin-top: 1%;
+    margin-right: 16%;
+    margin-left: 16%;
+    background-size:cover;
+    background-image: url("https://image.freepik.com/foto-gratis/mesa-blanca-vacia-madera-de-la-perspectiva-sobre-arboles-de-la-falta-de-definicion-con-el-fondo-del-bokeh-fondo-del-montaje-de-la-exhibicion-del-producto_7190-402.jpg");
 }
 
 .img1{
@@ -100,7 +104,5 @@ h2  {
 }
 
 
-.pageBackground {
-    background-image: url("https://image.freepik.com/foto-gratis/mesa-blanca-vacia-madera-de-la-perspectiva-sobre-arboles-de-la-falta-de-definicion-con-el-fondo-del-bokeh-fondo-del-montaje-de-la-exhibicion-del-producto_7190-402.jpg");
-}
+
 
