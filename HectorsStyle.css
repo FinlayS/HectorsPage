@@ -63,7 +63,7 @@ h2  {
     margin-right: auto;
     margin-top: 7%; 
     margin-bottom: 7%;
-    padding: 3%;
+    padding: 4%;
     background-size: cover;
 }
 
@@ -105,6 +105,7 @@ h2  {
 }
 .imgBrick{
     background-image: url('https://s2.favim.com/orig/150418/aesthetic-background-brick-pink-Favim.com-2661092.jpg');
+    background-size:cover;
 }
 
 
