@@ -7,6 +7,9 @@ body {
 h1 {
     font-family: Rammetto One, Monospace;
   }
+h2  {
+    font-family: Chewy, Monospace;
+}
 
 .orange-text {
     color: orangered;
@@ -18,12 +21,12 @@ h1 {
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 60;
-    
+    font-size: 60;    
 }
 
-h2  {
-    font-family: Chewy, Monospace;
+.base-margin {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .thin-pink-border {
