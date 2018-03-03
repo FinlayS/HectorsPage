@@ -7,6 +7,9 @@ body {
 h1 {
     font-family: Rammetto One, Monospace;
   }
+h2  {
+    font-family: Chewy, Monospace;
+}
 
 .orange-text {
     color: orangered;
@@ -18,12 +21,12 @@ h1 {
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 60;
-    
+    font-size: 60;    
 }
 
-h2  {
-    font-family: Chewy, Monospace;
+.base-margin {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .thin-pink-border {
@@ -106,6 +109,30 @@ h2  {
 .imgBrick{
     background-image: url('https://s2.favim.com/orig/150418/aesthetic-background-brick-pink-Favim.com-2661092.jpg');
     background-size:cover;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 60%; /* Full width (cover the whole page) */
+    height: 50%; /* Full height (cover the whole page) */
+    top: 20%; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#overText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
 }
 
 
