@@ -3,7 +3,50 @@
 <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="HectorsStyle.css">.
+<link rel="stylesheet" type="text/css" href="HectorsStyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<script>
+// some script for the buttoms and overlay
+$(document).ready(function() {
+    
+    // Default page state for pop up text
+    $("#text-pop-up").hide();
+    $("#hidden-text-elements").hide();
+
+     // common conditions when opening text pop up
+    $.fn.commonState = function() {
+        $("#text-pop-up").show(); 
+        $("#close").css("color", "red"); 
+        document.getElementById("overlay").style.display = "block";   
+    }
+
+        // Get the link, get the text and show.
+    $("a.readmore").click(function() { 
+        var id=this.id.match('0-9+');
+        var textId="#text-id-"+this.id;
+        $(textId).clone().replaceAll("#text-pop-up p");
+        $(textId).clone().replaceAll("#overText p");
+        $.fn.commonState();
+    });    
+
+    // Close and hide
+    $("#close").click(function() {;                    
+        $("#text-pop-up").hide(); 
+        
+        });
+        
+    $("#overOn").click(function() {
+            document.getElementById("overlay").style.display = "block";
+        });
+    $("#overOff").click(function() {
+            document.getElementById("overlay").style.display = "none";
+        }); 
+});
+</script>
+
+
 <h1 class="text-center"><span class="rainbow">A tribute to Hector</span></h1>
 <h2 class="orange-text text-center">Star of Hector's House</h2>
 
@@ -31,14 +74,18 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="squareTest img1 thick-pink-border">
-                            inner Bob
+                            <a id="1" class="readmore" href="#">
+                                Read more.
+                            </a>
                         </div>
                             outer bob
                     </div>
 
                     <div class="col-xs-6">
                         <div class="squareTest img2 thick-pink-border">
-                            inner Bob
+                            <a id="2" class="readmore" href="#">
+                                Read more.
+                            </a>
                         </div>
                         outer Bob 
                     </div>
@@ -46,14 +93,18 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="squareTest img3 thick-pink-border">
-                            inner Bob
+                            <a id="3" class="readmore" href="#">
+                                Read more.
+                            </a>
                         </div>
                         outer bob
                     </div>
 
                     <div class="col-xs-6">
                         <div class="squareTest img4 thick-pink-border">
-                            inner Bob
+                            <a id="4" class="readmore" href="#">
+                                Read more.
+                            </a>
                         </div>
                         outer Bob 
                     </div>
@@ -61,14 +112,18 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="squareTest img5 thick-pink-border">
-                            inner Bob
+                            <a id="5" class="readmore" href="#">
+                                Read more.
+                            </a>
                         </div>
                         outer bob
                     </div>
 
                     <div class="col-xs-6">
                         <div class="squareTest img6 thick-pink-border">
-                            inner Bob
+                            <a id="6" class="readmore orange-text" href="#">
+                                Read more.
+                            </a>
                         </div>
                         outer Bob 
                     </div>
@@ -76,14 +131,18 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="squareTest img1 thick-pink-border">
-                            inner Bob
+                            <a id="7" class="readmore" href="#">
+                                Read more.
+                            </a>
                         </div>
                             outer bob
                     </div>
 
                     <div class="col-xs-6">
                         <div class="squareTest img2 thick-pink-border">
-                            inner Bob
+                            <a id="8" class="readmore" href="#">
+                                Read more.
+                            </a>
                         </div>
                         outer Bob 
                     </div>
@@ -109,3 +168,48 @@ The show ended after one season which ran for five years, between 1965 and 1970 
 
 Hector was already 6 when season one began filming. He refused to film a second series citing that he "just wasn't up for it" but rumours were rife that by the time he would have completed a second series, Hector would be well into mid 80s in <a href="https://www.pedigree.com/dog-care/dog-age-calculator"> dog years</a>. Perhaps this was what Hector was referring to when he stated that he wasn't up for it? He refused to expand any further however.
 
+
+<!-- Button for the overlay -->
+<div id="overlay">
+    <div id="overText">
+      <p>Overlay Text</p>
+    </div>
+    <button class="btn btn-primary pull-right" id="overOff">x</button>
+</div>
+
+<!-- Text elements to place into the overlay -->
+<div id="hidden-text-elements">
+    
+    <p id="text-id-1">
+        The show ended after one season which ran for five years, between 1965 and 1970 and produced 78 episodes. This was extrodinarily long for a series commision even by standards in the 60s when the BBC had unlimited funds and an (almost) complete monopoly on the available TV channels.
+    </p> 
+
+    <p id="text-id-2">
+        Zaza was Hector's neighbour and best friend as far as the program went. Off set they were fierce enemies, that when questioned on the subject, neither of them could justify or explain why there was such animosity between them.
+    </p>
+    
+    <p id="text-id-3">
+        Kiki was Hector's other neighbour who was introduced to the plot after a couple of episodes. Her character "worked at the BBC in programming" which never really explained why she was always clad in staff canteen uniform. Indeed, her character in plot was weak. It was romoured in certain circles, that Hector only kept her on-set due to hallucinogenic properties excreted from her skin. They were once caught in his trailer performing a private act. Zaza, who discovered them, was shoved aside as Hector stormed out proclaiming "It's true!, they do taste of chicken".
+    </p>
+    
+    <p id="text-id-4">
+        Hector was said to be embarrased about his legs and would throw a fit of rage during filming if he ever suspected they were in-shot. So as not to as not to draw attention to himself, he made this a rule for all the members of the cast. Zaza, who was an amatuer athelete and proud of her physique, was know to be very unhappy about this.
+    </p>
+    
+    <p id="text-id-5">
+        The show was filmed for other countries and often on location. Hector travelled to Scotland to film a Gaelic version but returned after only one episode. He claimed the bitter cold and continually damp climate was not good for his coat. He was contracuarly bound to wear traditional dress and may even had had to "go commando" whist earing the a kilt. We can only ever speculate however as the kilt was never in shot the entire episode. 
+    </p>
+    
+    <p id="text-id-6">
+        Hector starred in an episode of <a href="https://en.wikipedia.org/wiki/The_Goodies">The Goodies</a> where he was to play an evil dictator who takes over the world. During casting for the episode, Bill Oddie accidentally commisioned Dougal from <a https://www.youtube.com/watch?v=fcnKvqDMnKU> The Magic Roundabout</a> and refused to acknowledge his mistake even when Tim Brooke-Taylor tried to point this out even Dougal turned up on set. The plot was changed where a number of childrens TV characters formed a government that tried to conquer the world. 
+    </p>
+    
+    <p id="text-id-7">
+        Hector was already 6 when season one began filming. He refused to film a second series citing that he "just wasn't up for it" but rumours were rife that by the time he would have completed a second series, Hector would be well into mid 80s in <a href="https://www.pedigree.com/dog-care/dog-age-calculator"> dog years</a>. Perhaps this was what Hector was referring to when he stated that he wasn't up for it? He refused to expand any further however.
+    </p>
+    
+    <p id="text-id-8">
+        TBC
+    </p>
+
+</div>
