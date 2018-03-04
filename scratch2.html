@@ -14,16 +14,14 @@ $(document).ready(function() {
     $.fn.commonState = function() {
         $("#text-pop-up").show(); 
         $("#close").css("color", "red"); 
-        document.getElementById("overlay").style.display = "block";
-        
+        document.getElementById("overlay").style.display = "block";   
     }
 
         // Get the link, get the text and show.
     $("a.readmore").click(function() { 
         var id=this.id.match('0-9+');
         var textId="#text-id-"+this.id;
-        $(textId).clone().replaceAll("#text-pop-up p");
-        $(textId).clone().replaceAll("#overText p");
+        $(textId).clone().replaceAll("#overText div");
         $.fn.commonState();
     });    
 
@@ -38,9 +36,8 @@ $(document).ready(function() {
         });
     $("#overOff").click(function() {
             document.getElementById("overlay").style.display = "none";
-        });
-    
-    });
+        }); 
+});
 </script>
 
 
@@ -69,10 +66,14 @@ $(document).ready(function() {
             </a>
         </div>
     </div>
+      
+      
     
 <div id="overlay">
     <div id="overText">
-      <p>Overlay Text</p>
+        <div>
+            <p>Overlay Text</p>
+        </div>
     </div>
     <button class="btn btn-primary pull-right" id="overOff">x</button>
 </div>
@@ -85,15 +86,21 @@ $(document).ready(function() {
 
 <div id="hidden-text-elements">
     
-    <p id="text-id-1">
-        This is the text for text 1
+    <div id="text-id-1">
         
-        And a bit more!
-    </p> 
+        <p>This is the text for text 1 it might be quite long for the time being as I'd like to see how to split paragraphs</p>
+        
+        <p style="font-size: 40px">And a bit more!</p>
+        
+    </div> 
 
-    <p id="text-id-2">
-        Text 2 is structured slightly differently
-    </p>
+    <div id="text-id-2">
+        
+        <p>Text 1 is structured slightly differently</p>
+        <p>Text 2 is structured slightly differently</p>
+        <p>Text 3 is structured slightly differently</p>
+        
+    </div>
     
     <p id="text-id-3">
         The third bit text is experimental
