@@ -15,33 +15,24 @@ $(document).ready(function() {
     $("#text-pop-up").hide();
     $("#hidden-text-elements").hide();
 
-     // common conditions when opening text pop up
-    $.fn.commonState = function() {
-        $("#text-pop-up").show(); 
-        $("#close").css("color", "red"); 
-        document.getElementById("overlay").style.display = "block";   
-    }
 
-        // Get the link, get the text and show.
+    // Get the link, get the text and show overlay.
     $("a.readmore").click(function() { 
         var id=this.id.match('0-9+');
         var textId="#text-id-"+this.id;
         $(textId).clone().replaceAll("#overText div");
-        $.fn.commonState();
+        $("#text-pop-up").show(); 
+        document.getElementById("overlay").style.display = "block";   
     });    
 
     // Close and hide
     $("#close").click(function() {;                    
         $("#text-pop-up").hide(); 
-        
-        });
-        
-    $("#overOn").click(function() {
-            document.getElementById("overlay").style.display = "block";
-        });
+    });
+    
     $("#overOff").click(function() {
             document.getElementById("overlay").style.display = "none";
-        }); 
+    }); 
 });
 </script>
 
@@ -51,8 +42,8 @@ $(document).ready(function() {
 
 
 <!-- List -->
-<div class="well well col-xs-12 white-background">
-    <div class="well well-sm col-xs-2 base-margin thin-pink-border">Small Well1
+<div class="well well col-xs-12 well-background">
+    <div class="well well-sm col-xs-2 base-margin well-background thin-pink-border">Links:
         <ul>
             <li>
                 Early life
@@ -71,13 +62,13 @@ $(document).ready(function() {
             </li>
         </ul>
     </div>
-    <div class="well well-sm col-xs-9 ">
+    <div class="well well-sm col-xs-9 well-background">
         <p>
         blah blah For some more reliable facts,blah blah For some more reliable facts, blah blah For some more reliable facts, blah blah For some more reliable facts, blah blah For some more reliable facts, blah blah For some more reliable facts, blah blah For some more reliable facts, blah blah For some more reliable facts, blah blah For some more reliable facts
         </p>
     </div>
         <div>
-            <div class="well well-sm col-xs-4 border-syle: none;">
+            <div class="well well-sm col-xs-4 well-background">
                 Hector lived in a house much unlike the one below
             </div>
         </div>

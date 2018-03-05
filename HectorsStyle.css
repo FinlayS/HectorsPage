@@ -14,8 +14,10 @@ h2  {
 .orange-text {
     color: rgb(219, 49, 37);
   }
-.white-background {
-    background-color: white;  
+.well-background {
+    background-color: white; 
+    outline background-color: white;
+    border-style: hidden;
 }
 
 .rainbow {
