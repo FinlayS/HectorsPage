@@ -6,14 +6,19 @@ body {
 
 h1 {
     font-family: Rammetto One, Monospace;
+    text-align: center;
   }
 h2  {
     font-family: Chewy, Monospace;
+    color: rgb(219, 49, 37);
+    text-align: center;
 }
 
+/*
 .orange-text {
-    color: rgb(219, 49, 37);
+    
   }
+*/
 .well-background {
     background-color: white; 
     outline background-color: white;
@@ -128,6 +133,11 @@ h2  {
     background-color: rgba(235,150,180,0.9); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay h2 {
+    font-family: Chewy, monospace
+    font-size: 40px
 }
 
 #overText{
