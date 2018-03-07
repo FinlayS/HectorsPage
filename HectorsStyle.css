@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-size:15px;
+    font-size:14px;
     font-family: 'Lato',Monospace, sans-serif;
 }
 
@@ -133,11 +133,14 @@ h2  {
     background-color: rgba(235,150,180,0.9); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
+    //max-height: 350px;
+    overflow-y: auto;
 }
 
 #overlay h2 {
     font-family: Chewy, monospace
     font-size: 40px
+    
 }
 
 #overText{
