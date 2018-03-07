@@ -7,11 +7,15 @@ body {
 h1 {
     font-family: Rammetto One, Monospace;
     text-align: center;
+    margin: 0px;
+    padding: 10px;
   }
 h2  {
     font-family: Chewy, Monospace;
     color: rgb(219, 49, 37);
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*
@@ -23,6 +27,8 @@ h2  {
     background-color: white; 
     outline background-color: white;
     border-width: 0;
+    margin: auto;
+    padding: 8px;
 }
 
 .rainbow {
@@ -124,17 +130,16 @@ h2  {
 #overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
-    width: 68   %; /* Full width (cover the whole page) */
-    height: 68%; /* Full height (cover the whole page) */
-    top: 15%; 
+    width: 68%; 
+    height: 57%;
+    top: 42%; 
     left: 16%;
     right: 16%;
     bottom: 0;
-    background-color: rgba(235,150,180,0.9); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    background-color: rgba(235,150,180,0.9); 
+    z-index: 2; 
     cursor: pointer; /* Add a pointer on hover */
-    //max-height: 350px;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 #overlay h2 {
