@@ -18,34 +18,16 @@ h2  {
     padding: 0px;
 }
 
-hr {
-    display: block;
-    height: 10px;
-    border: 2;
-    border-top: 101px 
-    color: rgb(219, 49, 37);
-    margin: 1em 0;
-    padding: 0;
-    color: rgb(219, 49, 37);
-}
-
-.hline-top {
-    padding-bottom: 100px;
-    border-bottom: 20px; 
-    color: hotpink;
-}
-
 .smallChewy {
     font-family: Chewy, Monospace;  
     text-align: center;
     color: rgb(219, 49, 37);
 }
 
-/*
-.orange-text {
-    
-  }
-*/
+.border-line-thin {
+   border-top:12px solid #efc9e6; 
+}
+
 .well-background {
     background-color: white; 
     outline background-color: white;
@@ -65,8 +47,12 @@ hr {
 
 .base-margin {
     margin-left: 10px;
-    margin-right: 10px;
-    padding-bottom: 1%;    
+    margin-right: 10px;   
+}
+
+.big-base-margin {
+    margin-left: 40px;
+    margin-right: 40px;  
 }
 
 .thin-pink-border {
@@ -110,14 +96,6 @@ hr {
     background-size: cover;
 }
 
-.content {
-    position:absolute;
-    height:100%; /* = 100% - 2*5% padding */
-    width:100%; /* = 100% - 2*5% padding */
-    padding: 5%;
-     
-}
-
 .pageBackground {
     color:#fff;
     background-position:center center;
@@ -152,13 +130,13 @@ hr {
 }
 
 #overlay {
-    position: fixed; /* Sit on top of the page content */
+    position: fixed; 
     display: none; /* Hidden by default */
-    width: 68%; 
-    height: 39%;
-    top: 42%; 
-    left: 16%;
-    right: 16%;
+    width: 40%; 
+    height: 22%;
+    top: 29%; 
+    left: 30%;
+    right: 30%;
     bottom: 0;
     background-color: rgba(235,150,180,0.9); 
     z-index: 2; 
@@ -167,7 +145,7 @@ hr {
 }
 
 #overlay h2 {
-    font-family: Chewy, monospace
+    font-family: Chewy, monospace;
     font-size: 40px
     
 }
