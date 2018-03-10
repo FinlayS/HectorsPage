@@ -1,3 +1,4 @@
+/* Element properties */
 body {
     background-color: white;
     font-size:16px;
@@ -18,6 +19,7 @@ h2  {
     padding: 0px;
 }
 
+/* Class properties */
 .smallChewy {
     font-family: Chewy, Monospace;  
     font-size:18px;
@@ -107,6 +109,7 @@ h2  {
     background-image: url("https://image.freepik.com/foto-gratis/mesa-blanca-vacia-madera-de-la-perspectiva-sobre-arboles-de-la-falta-de-definicion-con-el-fondo-del-bokeh-fondo-del-montaje-de-la-exhibicion-del-producto_7190-402.jpg");
 }
 
+/* Images for Index page*/
 .img1{
     background-image: url('http://nostalgiacentral.com/wp-content/uploads/2014/06/hectorshouse5.jpg');
 }
@@ -125,7 +128,9 @@ h2  {
 .img6{
     background-image: url('http://images.smh.com.au/2012/08/18/3565546/The-Goodies_729-620x349.jpg');
 }
-
+.img7{
+    background-image:  url('http://www.thechestnut.com/hector/ep702.jpg')
+}
 .img8{
     background-image: url(http://dessins-animes.com/da/maison_de_toutou/images/maison_de_toutou_07.jpg)
 }
@@ -134,25 +139,25 @@ h2  {
     background-size:cover;
 }
 
+/* Overlay properties */
 #overlay {
     position: fixed; 
-    display: none; /* Hidden by default */
+    display: none; 
     width: 40%; 
-    height: 27%;
-    top: 32%; 
+    height: 30%;
+    top: 35%; 
     left: 30%;
     right: 30%;
     bottom: 0;
     background-color: rgba(235,150,180,0.9); 
     z-index: 2; 
-    cursor: pointer; /* Add a pointer on hover */
+    cursor: pointer; 
     overflow-y: scroll;
 }
 
 #overlay h2 {
     font-family: Chewy, monospace;
     font-size: 40px
-    
 }
 
 #overText{
